@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jose Santiago Real Estate`,
+    description: `This website is based of the houses Jose Santiago, Milwaukee Lisenced realtor is currently selling.`,
+    author: `Karen Santiago`,
+    contact:{
+        name: `Jose Santiago`,
+        company: `ReThought: REAL ESTATE`,
+        address: `2625 S Greeley St. Ste 111 Milwaukee, WI 53207`
+    },
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
