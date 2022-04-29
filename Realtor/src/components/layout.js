@@ -4,14 +4,14 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled, { ThemeProvider } from 'styled-components'
 
+import { Gray } from '../themes/Gray'
 import Header from "./header"
-import "./layout.css"
+import GlobalStyle from './GlobalStyle'
 
 const Content = styled.div`
   margin: 0 auto;
@@ -32,7 +32,8 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <ThemeProvider theme = {Gray}>
+    <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title || `Title`} />
       <Content>
         <main>{children}</main>
@@ -46,7 +47,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </Content>
-    </>
+    </ThemeProvider>
   )
 }
 
