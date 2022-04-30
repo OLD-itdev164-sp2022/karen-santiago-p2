@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled, { ThemeProvider } from 'styled-components'
 
 import { Gray } from '../themes/Gray'
-import Header from "./header"
+import { Header } from "./Header/Header"
 import GlobalStyle from './GlobalStyle'
 
 const Content = styled.div`
@@ -40,8 +40,7 @@ const Layout = ({ children }) => {
         <footer
         style ={{
           marginTop: `2rem`,
-        }}
-      >
+        }}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
