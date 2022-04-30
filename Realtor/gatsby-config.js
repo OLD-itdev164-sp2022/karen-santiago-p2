@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Jose Santiago Real Estate`,
+    title: `Jose Santiago MKE Realtor`,
     description: `This website is based of the houses Jose Santiago, Milwaukee Lisenced realtor is currently selling.`,
     author: `Karen Santiago`,
     contact:{
