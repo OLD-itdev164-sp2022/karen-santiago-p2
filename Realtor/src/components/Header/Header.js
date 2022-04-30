@@ -7,9 +7,8 @@ import { H1 } from '../Heading'
 import { IconButton } from '../Button'
 import { Section } from '../Section'
 
-
 const Outer = styled.header`
-  background: ${props => props.theme.header.backgroundColor};
+  background: ${({ theme }) => theme.variants.header.primary.backgroundColor};
   margin-bottom: 1.45rem;
 `
 
@@ -18,10 +17,6 @@ const Inner = styled.div`
   max-width: 960px;
   padding: 1.45rem 1.0875rem;
 `
-
-//const H1 = styled.h1`
-//  margin: 0px;
-//`
 
 const StyledLink = styled(Link)`
   color: white;
@@ -43,7 +38,7 @@ const Header = ({ siteTitle }) => (
             </H1>
           </Section>
             <Section width={1/12}>
-              <IconButton icon={<Search />} />
+              <IconButton icon={<Search />} variant="contrast"/>
             </Section>
         </Section>
     </Inner>
