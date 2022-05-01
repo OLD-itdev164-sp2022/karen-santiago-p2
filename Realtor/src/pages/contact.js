@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql }  from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -16,10 +15,13 @@ const Contact = ({ data }) => {
             <div>{company}</div>
             <div>{`C/O ${name}`}</div>            
             <div>{address}</div>
+            <p></p>
+            <p>Email: js@rethought-realestate.com</p>
+            <p>Phone Number: 414-430-9633</p>
 
             <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`}}>
                 <StaticImage
-                    src="../images/gatsby-astronaut.png"
+                    src="../images/contact.png"
                     width={300}
                     quality={95}
                     formats={["auto", "webp", "avif"]}
