@@ -38,11 +38,11 @@ const Layout = ({ children }) => {
     <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title || `Title`} />
       <Content>
-        <Main>{children}</Main>
+        <Main m={20}>{children}</Main>
         <Footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </Footer>
       </Content>
     </ThemeProvider>
